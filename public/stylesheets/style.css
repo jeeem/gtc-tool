@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+canvas {
+	border: 1px solid red;
+  cursor: crosshair;
+	height: 300px;
+	width: 300px;
+}
+.vert {
+	display: flex;
+	flex-direction: column;
+}
+.header {
+	display: flex;
+	width: 100%
+}
+.hidden, #myDropzone.hidden {
+  display: none;
+}
+h1, p {
+  margin: 0 0 5px 0
+}
+#myDropzone {
+  align-items: center;
+  background: #f6f6f6;
+  border: 4px dashed #ddd;
+  color: 'black';
+  cursor: pointer;
+  display: flex;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  font-size: 1em;
+  height: calc(100vh - 8px);
+  justify-content: space-around;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: calc(100vw - 8px);
+}

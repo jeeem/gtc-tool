@@ -1,0 +1,41 @@
+<div id="myDropzone">
+	<h1>Drop an Image here to get started</h1>
+</div>
+<div class="header">
+	<div class="vert">
+		<h1>Main Logo</h1>
+		<p>(blue - <span class="show-main-active">active</span><span class="show-sponsor-active hidden">inactive</span>) <button id="editMain" class="show-sponsor-active hidden">edit</button></p>
+		<p>Height:<input id="mainLogoHeight" type="text" value="0px" /></p>
+		<p>Width:<input id="mainLogoWidth" type="text" value="0px" /></p>
+		<p>Area:<input id="mainLogoArea" type="text" value="0px" /></p>
+	</div>
+	<div class="vert">
+		<h1>Sponsor Logo</h1>
+		<p>(red - <span class="show-sponsor-active hidden">active</span><span class="show-main-active">inactive</span>) <button id="editSponsor" class="show-main-active">edit</button></p>
+    <p>Height:<input id="sponsorLogoHeight" type="text" value="0px" /></p>
+		<p>Width:<input id="sponsorLogoWidth" type="text" value="0px" /></p>
+		<p>Area:<input id="sponsorLogoArea" type="text" value="0px" /></p>
+		<p>Percentage of Main Logo Area:<input id="sponsorLogoPercent" type="text" value="invalid" /></p>
+	</div>
+</div>
+<div class="header">
+	<div class="vert">
+		<h1>Goal Area</h1>
+		<p>Sponsor logo (% of main logo area)</p>
+		<p><input id="goalLogoArea" type="text" value="20" />%</p>
+	</div>
+	<div class="vert">
+		<h1>Calculated Ideal Size</h1>
+		<p>Sponsor logo height<input id="goalLogoHeight" type="text" value="invalid" /></p>
+		<p>Sponsor logo weight<input id="goalLogoWidth" type="text" value="invalid" /></p>
+	</div>
+</div>
+<h4>Drag the mouse to create a rectangle</h4>
+<canvas id="canvas" class="hidden" width=300 height=300></canvas>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/dropzone"></script>
+<script>window._gtc = {}</script>
+<script type="text/javascript" src="/javascripts/canvas.js"></script>
+<script type="text/javascript" src="/javascripts/logo.js"></script>
+<script type="text/javascript" src="/javascripts/index.js"></script>
+<script type="text/javascript" src="/javascripts/state.js"></script>
